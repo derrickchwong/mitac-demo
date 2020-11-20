@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: mitac-demo
+server:
+  port: 8080
+
+
+---
+spring:
+  config:
+    activate:
+      on-profile: oracle
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: username
+    password: password
+
+
